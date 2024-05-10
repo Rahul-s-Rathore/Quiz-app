@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css">        
+</head>
+<body>
+        <div id="container" class="flex justify-center items-center h-screen w-full bg-slate-950">
+            <div id="main" class="bg-white w-[40%] rounded px-5 py-2">
+                <div id="question"><p class="md:text-2xl text-xl font-bold md:font-medium" id="questionbox">1) This is sample Question</p></div>
+                <div class="my-6">
+                    <input class="opt" id="option1" type="radio" name="option" value="a">
+                    <label for="option1" class="font-medium">option 1</label>
+                </div>
+
+                <div class="my-6">
+                    <input class="opt" id="option2" type="radio" name="option" value="b">
+                    <label for="option2" class="font-medium">option 2</label>
+                </div>
+
+                <div class="my-6">
+                    <input class="opt" id="option3" type="radio" name="option" value="c">
+                    <label for="option3" class="font-medium">option 3</label>
+                </div>
+
+                <div class="my-6">
+                    <input class="opt" id="option4" type="radio" name="option" value="d">
+                    <label for="option4" class="font-medium">option 4</label> 
+                </div>
+
+                <button class="bg-violet-700 text-white w-full h-12 rounded-md mt-5 text-xl transition-opacity duration-300 hover:opacity-85  " onclick="submitQuiz()" id="btn">Submit</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
